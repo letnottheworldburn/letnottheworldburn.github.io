@@ -8,6 +8,10 @@
       margin: 0;
         padding: 0
     }
+    body{
+      height: 100%;
+      background-color: black;
+    }
 
     main{
       line-height: 1.5;
@@ -25,9 +29,11 @@
       background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-      text-shadow: 0 0 12px rgba(0,0,0,.5)
+    
+      text-shadow: 0 0 4px rgba(0,0,0,.5),0 0 12px rgba(0,0,0,.3)
     }
     article{
+      max-height: 100%;
       max-width: 40em;
       padding: 1em;
       background-color: rgba(0,0,0,0.2);
@@ -36,27 +42,32 @@
     }
     h1{
       font-size: 4rem;
-	    line-height: 1.2;
+	    line-height: 1;
       font-weight: 400;
       text-align: center;
       font-family: "Bebas Neue";
       letter-spacing: .3rem;
       margin-bottom: 0;
-      padding-bottom: 0
+      padding-bottom: 0;
+      margin-top: 1rem;
     }
     h2{
-	    margin: 0;
+	    margin: 1rem 0 0 0;
       font-size: 1.5rem;
 	    line-height: 1.2;
       text-align: center;
+    }
+    .panel{
+      margin: 2em 0;
     }
 
 	  .panelists{
 		  display: flex;
 		  flex-direction: row;
-		  gap:1em;
+		  gap: 1em;
 		  justify-content: space-between;
-		  margin: 2em 0;
+      flex-wrap: wrap;
+		  
 	  }
 	  .panelist{
 		  	flex-basis: 12em;
@@ -67,6 +78,15 @@
 	  .moderator{
 		  text-align: center
 	  }
+    b{
+      font-weight: 900;
+    }
+
+    .event {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-align:center;
+    }
     
   </style>
 </head>
@@ -100,7 +120,7 @@
 	    </section>
 	    </section>
 <section class='event'>	    
-<p>20:00 Australian Eastern Standard Time, 13 July</p>
+<p>20:00 AEST, 13 July</p>
 <p>URL here</p>
 		    </section>
       
