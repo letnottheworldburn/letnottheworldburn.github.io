@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width">
     <title>Let Not The World Burn</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,9 +72,7 @@
       
     }
     .panelist{
-        flex-basis: 12em;
-  flex-grow: 0;
-  flex-shrink: 0;
+
     }
     
     .moderator{
@@ -91,7 +90,7 @@
     .zoom-link{
       display: block;
       padding: 1em;
-      border: 1px solid white;
+      border: 1px solid #ff0000;
       font-weight: 900;
       margin: 2em auto;
       letter-spacing: .3em;
@@ -100,15 +99,12 @@
     .zoom-link:hover{
       background-color:white;
       color: black;
+      cursor: pointer;
 
       text-shadow: none;
     }
     
-    @media screen and (max-width: 780px)
-.panelists {
-    flex-direction: column;
-    margin: 0;
-}
+
   </style>
 </head>
 <body>
